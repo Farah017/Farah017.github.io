@@ -1,7 +1,7 @@
 # 🚀 Farah017 Portfolio & Projects
 
 Welcome! This repository contains both my evolving portfolio site (Versions 1–4) and my featured **Zoo Booking System** project.  
-I’ve documented each stage clearly so employers can see my progression in design, responsiveness, and security focus.
+I’ve documented each stage clearly so you can see my progression in design, responsiveness and security focus.
 
 ---
 
