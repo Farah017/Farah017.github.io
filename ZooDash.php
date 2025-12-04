@@ -38,7 +38,7 @@ if ($email) {
     </div>
 
     <ul class="dash-nav">
-        <li><a href="index.html">Home</a></li>
+         <li><a href="zooindex.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="education.html">Educational Visits</a></li>
     </ul>
@@ -75,4 +75,5 @@ if ($email) {
 
 
 </body>
+
 </html>
