@@ -24,7 +24,8 @@
   <p class="note">The site is GDPR Compliant</p>
 </div>
 <br><br>
-<a href="index.html" class="signup-button">Go back to home page</a>
+<a href="zooindex.html" class="signup-button">Go back to home page</a>
 
     </body>
+
     </html>
