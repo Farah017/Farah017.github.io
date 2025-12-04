@@ -48,6 +48,35 @@ main{
   text-decoration: underline;
 }
 
+/* Layout: make cards sit side by side */
+.portfolio-links, .zoo-project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Special highlight for Zoo Project */
+.zoo-project .card {
+  border: 2px solid #00ff88;          /* neon green border */
+  box-shadow: 0 0 15px #00ff88;       /* glowing effect */
+  flex: 1;                            /* allow it to grow */
+}
+
+/* Special highlight for Portfolio 4 */
+.portfolio-links .card:nth-child(4) {
+  border: 2px solid #ff00ff;          /* neon pink border */
+  box-shadow: 0 0 15px #ff00ff;       /* glowing effect */
+  flex: 1;
+}
+
+/* Ensure cards align nicely */
+.card {
+  flex: 1;
+  min-width: 280px;
+}
+
+
 footer {
   margin-top: 40px;
   padding: 20px;
