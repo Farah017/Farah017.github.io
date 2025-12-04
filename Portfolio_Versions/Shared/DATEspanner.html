@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Date.css">
+        <title> Date Span Calculator</title>
+    </head>
+
+<body>
+
+<h1>Date Span Calculator</h1>
+<p class="subtitle">Calculate Number of Days, Months and Years Between 2 Dates</p>
+
+<div class="form-container">
+
+    <form name="Form1" action="" method="post" onsubmit="return CalcDate()">
+
+        <label for="date1">Choose a starting date:</label>
+        <input type="date" id="date1" name="date1" required>
+
+        <br>
+
+        <label for="date2">Choose a date for the event:</label>
+        <input type="date" id="date2" name="date2" required>
+
+        <br>
+
+        <button type="submit">Submit</button>
+
+        <br>
+        
+        <label for="daysResult">Days:</label>
+        <input type="text" id="daysResult" readonly>
+
+        <label for="monthsResult">Months:</label>
+        <input type="text" id="monthsResult" readonly>
+
+        <label for="yearsResult">Years:</label>
+        <input type="text" id="yearsResult" readonly>
+
+    </form>
+</div>
+
+
+<script>
+
+    function CalcDate()
+    {
+        //Input - get the data from the form
+        var date1 = new Date(document.forms["Form1"]["date1"].value);
+        var date2 = new Date(document.forms["Form1"]["date2"].value);
+
+        //Calculate difference in days
+        const diffTime = Math.abs(date2 - date1); // Difference is milliseconds
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); // Converts to days
+        
+        //Calculate difference in months and years
+        let years = date2.getFullYear() - date1.getFullYear();
+        let months = date2.getMonth() - date1.getMonth();
+        let days = date2.getDate() - date1.getDate();
+
+        if (days < 0) {
+            months -= 1;
+            // Get number of days in previous month
+            let PrevMonth = new Date(date2.getFullYear(), date2.getMonth(), 0)
+            days += PrevMonth.getDate();
+        }
+
+        if (months < 0) {
+            years -= 1;
+            months += 12;
+        }
+
+        //debugging
+        console.log("Calculating.. ");
+        console.log(date1);
+        console.log(date2);
+
+        console.log(diffDays);
+        console.log(diffTime);
+
+        //Output
+        document.getElementById("daysResult").value = diffDays;
+        document.getElementById("monthsResult").value = months;
+        document.getElementById("yearsResult").value = years;
+        return false; // stops the page refreshing
+    }
+
+</script>
+</body>
+</html>
