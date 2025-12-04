@@ -49,7 +49,7 @@ main{
 }
 
 /* Layout: make cards sit side by side */
-.portfolio-links, .zoo-project {
+.portfolio-links, .portfolio-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -57,14 +57,14 @@ main{
 }
 
 /* Special highlight for Zoo Project */
-.zoo-project .card {
+.portfolio-row .card:last-child {
   border: 2px solid #00ff88;          /* neon green border */
   box-shadow: 0 0 15px #00ff88;       /* glowing effect */
-  flex: 1;                            /* allow it to grow */
+  flex: 1;
 }
 
 /* Special highlight for Portfolio 4 */
-.portfolio-links .card:nth-child(4) {
+.portfolio-row .card:first-child {
   border: 2px solid #ff00ff;          /* neon pink border */
   box-shadow: 0 0 15px #ff00ff;       /* glowing effect */
   flex: 1;
@@ -76,6 +76,14 @@ main{
   min-width: 280px;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #58a6ff;
+}
+
+.card:hover a {
+  text-decoration: underline;
+}
 
 footer {
   margin-top: 40px;
