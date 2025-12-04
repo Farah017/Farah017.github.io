@@ -97,7 +97,8 @@ ul.nav li a:hover {
     flex: 1;
     width: 50%;
     height:200px;
-    opacity:0.9;       
+    opacity:0.9; 
+    box-shadow: 0 0 15px rgba(84, 98, 173, 0.466);
 }
 
 
@@ -108,7 +109,8 @@ ul.nav li a:hover {
     flex: 1;
     width: 50%;
     height:500px;
-    opacity:0.9;       
+    opacity:0.9;   
+    box-shadow: 0 0 15px rgba(84, 98, 173, 0.466);
 } 
 
 .certificate2{
@@ -119,6 +121,7 @@ ul.nav li a:hover {
     width: 40%;
     height:500px;
     opacity:0.9;
+    box-shadow: 0 0 15px rgba(84, 98, 173, 0.466);
 }
 
 .qualifications{
@@ -129,6 +132,7 @@ ul.nav li a:hover {
     width: 30%;
     height:200px;
     opacity:0.9;
+    box-shadow: 0 0 15px rgba(84, 98, 173, 0.466);
 }
 
 .placement{
@@ -139,6 +143,7 @@ ul.nav li a:hover {
     width: 60%;
     height:150px;
     opacity:0.9;
+    box-shadow: 0 0 15px rgba(84, 98, 173, 0.466);
 }
 
 .skill{
@@ -149,6 +154,7 @@ ul.nav li a:hover {
     width: 50%;
     align-self: center;
     opacity:0.9;
+    box-shadow: 0 0 15px rgba(84, 98, 173, 0.466);
 }
 
 .skills-list{
@@ -172,6 +178,7 @@ ul.nav li a:hover {
     min-width: 280px;
     opacity:0.9;
     height: 150px;
+    box-shadow: 0 0 15px rgba(84, 98, 173, 0.466);
 }
 
 
@@ -507,5 +514,6 @@ ul.nav li a[href="ZooProject.html"]:hover {
     width: 90%;
   }
 }
+
 
 
