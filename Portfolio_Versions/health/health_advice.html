@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset = "UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel = "stylesheet" href = "health.css">
+    <title> Health Advice </title>
+    <link rel = "icon" type = "x-icon" href = "images/Health logo.png">
+    <script src="healththeme.js"></script>
+</head>
+
+
+
+<!-- Navigation Bar -->
+ <body>
+    <div class = "navbar">
+
+        <!-- Favicon on left side of nav bar-->
+        <div class = "nav-left">
+            <a href="healthindex.html">
+            <img src = "images/Health logo.png" alt = "Health Logo" class = "nav-logo"> 
+            </a> 
+        </div>
+
+
+        <ul class = "nav">
+            <li><a href="healthindex.html">Home</a></li>
+            <li><a href="health_advice.html">Health Advice</a></li>
+            <li><a href="weather_forecast.php">Weather Forecast</a></li>
+            <li><a href="air_quality.php">Air Quality Dashboard</a></li>
+            <li><a href="risk_assessment.php">Home Risk Assessment</a></li>
+        </ul>
+
+
+        <!-- Dark/Light mode button-->
+        <button type = "button" onclick="changeTheme()">Change Theme</button>
+
+
+         <!-- Sign-up/Login buttons on right side of nav bar-->
+        <div class = "nav-right">
+            <a href="health_login.php" class ="button"> Login</a>
+            <a href="health_sign-up.php" class ="sign-up-button">Sign-Up</a>
+        </div>
+    
+    </div>
+
+   
+
+
+
+    <!-- Health Advice Cards -->
+    <div class="main1 advice">
+        <h1>Health Advice</h1>
+    
+        <div class = "advice-cards">
+
+        <div class="advice-card">
+            <img src="images/sun.png" alt="Sun">
+
+            <div class="advice-card-content">
+                <h3 style="color: #000000;">Heatwave</h3>
+                <p>Stay hydrated and avoid midday sun.</p>
+                <a href="#training-resources" class="hot-button">Find Out More</a>
+            </div>
+        </div>
+
+
+        <div class="advice-card">
+            <img src="images/snowflake.png" alt="Snowflake">
+
+            <div class="advice-card-content">
+                <h3 style="color: #000000;">Cold Weather</h3>
+                <p>Layer clothing and keep indoor spaces warm.</p>
+                <a href="#training-resources" class="cold-button">Find Out More</a>
+            </div>
+        </div>
+
+
+        <div class="advice-card">
+            <img src="images/pollen.png" alt="Pollen on flower">
+
+            <div class="advice-card-content">
+                <h3 style="color: #000000;">Pollen</h3>
+                <p>Check pollen levels before going outside.</p>
+                <a href="#training-resources" class="pollen-button">Find Out More</a>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+
+<br> 
+
+<!-- Call to Action Banner -->
+    <div class="advice-banner">
+        <h2>Need Tailored Advice?</h2>
+        <p>Sign-up now for a personalised dashboard</p>
+        <a href="health_sign-up.php" class="sign-up-button">Sign-Up</a>
+    </div>
+
+    <br><br>
+
+
+
+    <!-- Training Resources Section -->
+    <section id="training-resources">
+        <div class="training">
+        <h1>Training Resources</h1>
+        <p> Resources for healthcare workers, teachers and community leaders to share advice and keep communities safe.</p>
+        
+        <br><br>
+        <div class="training-cards">
+
+        <div class="heatwave-card">
+            <img src="images/heatwave-poster.png" alt="Heatwave Poster">
+
+            <div class="training-card-content">
+                <h4>Heatwave Poster</h4>
+                <p>NHS poster with practical advice on coping during heatwaves, including hydration, sun protection and support for vulnerable groups.</p>
+                <a href="images/heatwave-poster.png" download="NHS-Heatwave-Advice.pdf" class="quick-button">Download Poster</a> <!-- Downloadable pdf poster -->
+            </div>
+        </div>
+
+
+        <div class="winter-card">
+            <img src="images/winter.png" alt="NHS Stay well this winter">
+
+            <div class="training-card-content">
+                <h4>Cold Weather Guide</h4>
+                <p>Practical tips from the NHS on staying safe and healthy during cold weather, including advice on keeping warm, preventing illness, and supporting vulnerable people.</p>
+                <!-- Not downloadable guide, because NHS may update this, so its better to view online -->
+                <a href="https://www.gov.uk/government/publications/keep-warm-keep-well-leaflet-gives-advice-on-staying-healthy-in-cold-weather/top-tips-for-keeping-warm-and-well-this-winter" class = "quick-button">View Guide</a> 
+            </div>
+        </div>
+
+
+        <div class="training-card">
+            <img src="images/nhshayfever.png" alt="Hay Fever image">
+
+            <div class="training-card-content">
+                <h4>Pollen Avoidance Information</h4>
+                <p>NHS guidance for patients on reducing exposure to pollen, with practical tips to manage allergies and stay comfortable during high pollen season.</p>
+                <a href="resources/nhs-pollen-avoidance.pdf" download="NHS-Pollen-Avoidance.pdf" class="quick-button">Download PDF</a> <!-- Downloadable pdf -->
+            </div>
+        </div>
+
+
+         <div class="pollution-card">
+            <img src="images/pollution.png" alt="Air Pollution effects">
+
+            <div class="training-card-content">
+                <h4>Pollution & Air Quality Information</h4>
+                <p>NHS guidance on the health impacts of air pollution, with practical steps to reduce exposure and protect vulnerable groups.</p>
+                <!-- Not downloadable guide, because NHS may update this, so its better to view online -->
+                <a href="https://www.gov.uk/government/publications/health-matters-air-pollution/health-matters-air-pollution" class = "quick-button">View Guide</a> 
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+     <footer class="site-footer">
+
+        <div class="footer-links">
+
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="health_advice.html">Health Advice</a></li>
+                    <li><a href="weather_forecast.php">Weather Forecast</a></li>
+                    <li><a href="air_quality.php">Air Quality Dashboard</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="risk_assessment.php">Home Risk Assessment</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#alerts">Alerts</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column-social">
+                <h4>Connect</h4>
+                <div class="social-icons"></div>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Health Advice Group. All rights reserved.</p>
+        </div>
+     </footer>
